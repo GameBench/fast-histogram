@@ -32,8 +32,8 @@ except ImportError:
 else:
     setup_requires = []
 
-setup(name='fast-histogram',
-      version='0.8.dev0',
+setup(name='gb-fast-histogram',
+      version='0.1gb0',
       description='Fast simple 1D and 2D histograms',
       long_description=LONG_DESCRIPTION,
       setup_requires=setup_requires ,
@@ -41,7 +41,7 @@ setup(name='fast-histogram',
       author='Thomas Robitaille',
       author_email='thomas.robitaille@gmail.com',
       license='BSD',
-      url='https://github.com/astrofrog/fast-histogram',
-      packages=['fast_histogram', 'fast_histogram.tests'],
+      url='https://github.com/GameBench/gb-fast-histogram',
+      packages=['gb_fast_histogram', 'gb_fast_histogram.tests'],
       ext_modules=extensions,
       cmdclass={'build_ext': build_ext_with_numpy})
