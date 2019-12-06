@@ -460,7 +460,7 @@ static PyObject *_histogram1d_weighted(PyObject *self, PyObject *args) {
       tx = *(double *)dataptr[0];
       tw = *(double *)dataptr[1];
 
-      if (tx >= xmin && tx < xmax) {
+      if (tx >= xmin && tx <= xmax) {
         ix = (tx - xmin) * normx * fnx;
         count[ix] += tw;
       }
