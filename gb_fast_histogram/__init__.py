@@ -1,3 +1,3 @@
 from .histogram import *
 
-__version__ = "0.8.dev0"
+__version__ = "0.1gb0"
