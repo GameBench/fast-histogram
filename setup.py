@@ -14,8 +14,8 @@ class build_ext_with_numpy(build_ext):
         build_ext.run(self)
 
 
-extensions = [Extension("fast_histogram._histogram_core",
-                        [os.path.join('fast_histogram', '_histogram_core.c')])]
+extensions = [Extension("gb_fast_histogram._histogram_core",
+                        [os.path.join('gb_fast_histogram', '_histogram_core.c')])]
 
 with io.open('README.rst', encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
@@ -42,6 +42,6 @@ setup(name='gb-fast-histogram',
       author_email='thomas.robitaille@gmail.com',
       license='BSD',
       url='https://github.com/GameBench/gb-fast-histogram',
-      packages=['fast_histogram', 'fast_histogram.tests'],
+      packages=['gb_fast_histogram', 'gb_fast_histogram.tests'],
       ext_modules=extensions,
       cmdclass={'build_ext': build_ext_with_numpy})
