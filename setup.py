@@ -42,6 +42,6 @@ setup(name='gb-fast-histogram',
       author_email='thomas.robitaille@gmail.com',
       license='BSD',
       url='https://github.com/GameBench/gb-fast-histogram',
-      packages=['gb_fast_histogram', 'gb_fast_histogram.tests'],
+      packages=['fast_histogram', 'fast_histogram.tests'],
       ext_modules=extensions,
       cmdclass={'build_ext': build_ext_with_numpy})
